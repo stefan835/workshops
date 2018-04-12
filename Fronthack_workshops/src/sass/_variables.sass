@@ -21,17 +21,15 @@ $green: #00a651
 $yellow: #ffd429
 $red: #e50038
 
-
 //** Primary brand colors assigment
 $brand-primary: $turquoise
 $brand-primary-light: $turquoise-light
 
 //** Global colors assigment
-$body-bg:          $almost-white
-$text-color:       $gray-base
-$link-color:       $brand-primary
+$body-bg: $almost-white
+$text-color: $gray-base
+$link-color: black
 $link-color-hover: lighten($link-color, 15%)
-
 
 //== Typography
 //
@@ -39,44 +37,44 @@ $link-color-hover: lighten($link-color, 15%)
 
 // Font families
 $font-family-serif: "Roboto Slab", Georgia, "Times New Roman", Times, serif
-$font-family-sans-serif: "Roboto", sans-serif
+$font-family-sans-serif: 'Montserrat', sans-serif
 $font-family-base: $font-family-sans-serif
-$font-family-headings: $font-family-serif
+$font-family-headings: $font-family-sans-serif
 
 // Font sizes
 $font-size-xsmall: 12px
 $font-size-small: 14px
-$font-size-base: 16px
+$font-size-base: 18px
 $font-size-large: 24px
 
 // Line height and bottom margin
-$line-height-base: 26px
+$line-height-base: 29px
 $paragraphs-margin: $line-height-base
 
 // Font weights
 $thin: 200
-$regular: 300
-$bold: 500
-
+$regular: 400
+$medium: 500
+$semi-bold: 600
+$bold: 700
 
 //== Media queries and breakpoints
 //
 //## Define the breakpoints at which your layout will change, adapting to different screen sizes.
 
 // Extra small screen / phone
-$screen-xs-min:              0
+$screen-xs-min: 0
 // Small screen / tablet
-$screen-sm-min:              48em
+$screen-sm-min: 48em
 // Medium screen / desktop
-$screen-md-min:              62em
+$screen-md-min: 62em
 // Large screen / wide desktop
-$screen-lg-min:              75em
+$screen-lg-min: 75em
 
 // So media queries don't overlap when required, provide a maximum
-$screen-xs-max:              ($screen-sm-min - 1)
-$screen-sm-max:              ($screen-md-min - 1)
-$screen-md-max:              ($screen-lg-min - 1)
-
+$screen-xs-max: ($screen-sm-min - 1)
+$screen-sm-max: ($screen-md-min - 1)
+$screen-md-max: ($screen-lg-min - 1)
 
 //== Page container
 //
@@ -85,6 +83,6 @@ $screen-md-max:              ($screen-lg-min - 1)
 // Sidepaddings of a container on mobile devices
 $container-paddings: 15px
 // Maximum width of the containers
-$container-max-width: 1000px
+$container-max-width: 1080px
 $container-narrow-max-width: 700px
-$container-wide-max-width: 1400px
+$container-wide-max-width: 1410px

@@ -1,0 +1,30 @@
+// Sticky navbar
+//
+// Navigation bar sticked to top.
+
+$sticky-navbar-height: 90px
+
+// Block
+// --------------------------------------------------
+.sticky-navbar
+  // Set space
+  height: $sticky-navbar-height
+  +breakpoint(desktop)
+    height: 90px
+
+// Elements
+// --------------------------------------------------
+.sticky-navbar__fixed
+  position: fixed
+  top: 0
+  width: 100%
+  height: $sticky-navbar-height
+  z-index: 10
+  color: white
+
+.sticky-navbar__container
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 100%
+  +container

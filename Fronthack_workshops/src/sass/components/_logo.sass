@@ -1,0 +1,21 @@
+// Logo
+//
+// Component to display site's logo in page header for example. Can be different
+// size on mobile devices.
+
+$logo-width-desktop: 35px
+$logo-height-desktop: 38px
+$logo-width-mobile: $logo-width-desktop*0.666
+$logo-height-mobile: $logo-height-desktop*0.666
+
+// Block
+// --------------------------------------------------
+.logo
+  display: block
+  width: $logo-width-mobile
+  height: $logo-height-mobile
+  background: url("../../images/sign@2x.png") no-repeat
+  background-size: 100%
+  +breakpoint(tablet)
+    width: $logo-width-desktop
+    height: $logo-height-desktop
